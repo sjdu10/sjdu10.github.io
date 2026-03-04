@@ -21,17 +21,6 @@ Education
   * GPA: 3.76/4.00
   * Advisor: Prof. Yi Zhang
 
-Professional Experience
-======
-* **Graduate Research Assistant**, California Institute of Technology, 2022 -- present
-* **Undergraduate Research Assistant**, Peking University, 2019 -- 2022
-
-Skills
-======
-* **Programming**: Python, PyTorch, C/C++
-* **HPC & Systems**: MPI, GPU Parallelization (CUDA)
-* **Methods**: Markov Chain Monte Carlo, Numerical Linear Algebra, Tensor Networks, Variational Optimization
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -42,26 +31,42 @@ Talks
 ======
 * **S. Du**, W. Liu, R. Peng, J. Gray and G. Chan. "Tensor Network Computations That Capture Strict Variationality, Volume Law Behavior, and the Efficient Representation of Neural Network States." Oral presentation at APS Global Physics Summit, Anaheim, CA, 2025.
 
+Professional Experience
+======
+* **Graduate Research Assistant**, California Institute of Technology, 2022 -- present
+* **Undergraduate Research Assistant**, Peking University, 2019 -- 2022
+
+Skills
+======
+* **Programming**: Python, PyTorch
+* **HPC & Systems**: MPI, GPU Parallelization
+* **Methods**: Markov Chain Monte Carlo, Numerical Linear Algebra, Tensor Networks, Variational Optimization
+
+Research Experience
+======
+* **Large-Scale Quantum Monte Carlo with Hybrid TN-NN Models**
+  * Advisor: Prof. Garnet Kin-Lic Chan, Caltech
+  * Built a hybrid ansatz combining Tensor Networks (MPS/PEPS) with Neural Networks (Transformer), achieving state-of-the-art ground-state energy for the Fermi-Hubbard model.
+  * Ran large-scale GPU/CPU parallelized Monte Carlo simulations of quantum many-body systems.
+
+* **Unifying Tensor Networks and Deep Learning Optimization**
+  * Advisor: Prof. Garnet Kin-Lic Chan, Caltech
+  * Developed a framework treating Tensor Networks as neural architectures, enabling modern ML techniques (autodiff, stochastic natural gradient) for tensor network optimization.
+  * Leveraged structural inductive bias of Tensor Networks to improve trainability and interpretability of large-scale variational models.
+
+* **ML-Assisted Quantum Ground-State Search**
+  * Advisor: Prof. Yi Zhang, Peking University
+  * Mapped quantum ground-state searches onto low-dimensional classical constrained optimization, greatly reducing computational complexity.
+  * Trained neural network surrogates to approximate quantum constraints for efficient classical solvers.
+
+Open Source
+======
+* **[vmc_torch](https://github.com/sjdu10/vmc_torch)** -- A PyTorch library for variational Monte Carlo simulation of quantum many-body systems.
+  * Modular framework supporting plug-and-play variational ansatzes (Tensor Networks, Neural Networks, and hybrids).
+  * MPI-parallelized MCMC sampling and optimization for large-scale runs across multi-GPU/CPU clusters.
+
 Awards & Fellowships
 ======
 * 2022: **EAS Division Fellowship**, California Institute of Technology
 * 2020: **Li Huirong Scholarship**, Peking University
 * 2019: **Wang Lao Ji Scholarship**, Peking University
-
-Research Experience
-======
-* **Hybrid Tensor Network & Neural Network Model for Quantum Variational Monte Carlo**
-  * Advisor: Prof. Garnet Kin-Lic Chan, Caltech
-  * Performed high-performance large-scale GPU/CPU parallelized Monte Carlo simulations of quantum many-body systems.
-  * Engineered a novel hybrid variational ansatz by integrating Tensor Networks (MPS/PEPS) with SOTA Neural Networks (e.g. Transformer), achieving state-of-the-art accuracy in ground-state energy for the Fermi-Hubbard model.
-  * Architected a modular, open-source Python library supporting flexible ansatz structures, implementing efficient MCMC sampling based on MPI for large-scale optimization. ([vmc_torch](https://github.com/sjdu10/vmc_torch))
-
-* **Bridging Tensor Networks and Machine Learning**
-  * Advisor: Prof. Garnet Kin-Lic Chan, Caltech
-  * Developed a unified framework treating Tensor Networks as high-dimensional neural architectures, enabling the application of modern ML optimization techniques such as Automatic Differentiation and Stochastic Natural Gradient Descent.
-  * Engineered scalable implementations that leverage the structural inductive bias of Tensor Networks (e.g., entanglement entropy structure) to improve the trainability and interpretability of large-scale variational models.
-
-* **ML-Assisted Algorithms for Quantum Many-Body Systems**
-  * Advisor: Prof. Yi Zhang, Peking University
-  * Formulated a novel hybrid algorithm that maps complex quantum ground-state searches onto low-dimensional classical constrained optimization problems, greatly reducing computational complexity.
-  * Implemented a machine-learned surrogate model to represent quantum constraints, utilizing neural networks to approximate the low-dimensional constraint function in observable expectation value manifold for efficient classical solvers.
