@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a 3rd year PhD student in Applied Physics at [Caltech](https://www.caltech.edu/), advised by [Prof. Garnet Kin-Lic Chan](https://www.chan-lab.caltech.edu/). My research focuses on developing and applying **tensor network** and **machine learning** methods for **quantum many-body systems**.
+I am a 4th year PhD student in Applied Physics at [Caltech](https://www.caltech.edu/), advised by [Prof. Garnet Kin-Lic Chan](https://www.chan-lab.caltech.edu/). My research focuses on developing and applying **tensor network** and **machine learning** methods for **quantum many-body systems**.
 
 ## Research Interests
 
